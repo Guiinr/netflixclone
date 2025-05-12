@@ -8,11 +8,11 @@ export default () => {
     const loadAll = async () => {
       let list = await Tmdb.getHomeList();
       setMovieList(list);
-      console.log(list);
+
+
     }
     loadAll();
   }, []);
-
   return (
     <div className="page">
       <section className="lists">
@@ -21,6 +21,7 @@ export default () => {
         ))}
 
       </section>
+
     </div>
   )
 }
